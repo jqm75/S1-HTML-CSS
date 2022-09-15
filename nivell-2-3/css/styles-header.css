@@ -1,0 +1,240 @@
+/* MOBILE */
+header {
+  grid-area: header;
+  background-color: #808080;
+
+  background-image: url("../images/header.jpg");
+
+  background-image: -webkit-image-set(
+    url("../images/header.jpg")
+    );
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 2rem;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+#top-header {
+  grid-row: 1;
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 1rem;
+}
+
+#header-icon {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+#header-icon > img {
+  height: 100%;
+  width: 4.75rem;
+  animation: moveRight 1s ease-in;
+}
+
+#navbar {
+  background-color: rgb(128, 128, 128, 0.7);
+  border-radius: 1rem;
+  grid-row: 2;
+  grid-column: 1/3;
+}
+
+#navbar > ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, auto);
+  place-items: center;
+  animation: moveDown 1s ease-in;
+}
+
+#navbar > ul > li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7rem;
+}
+
+#navbar > ul > li > a {
+  text-shadow: 0 0 5px white;
+}
+
+#navbar > ul > li:hover {
+  background-color: rgb(209, 209, 209, 0.7);
+}
+
+#navbar > ul > li:first-child {
+  border-radius: 1rem 1rem 0 0;
+}
+
+#navbar > ul > li:nth-child(5) {
+  border-radius: 0 0 1rem 1rem;
+}
+
+#navbar > ul > li:last-child {
+  display: none;
+}
+
+#navbar > ul > li > a > span {
+  margin-right: 0.5rem;
+}
+
+#header-social-icons {
+  grid-row: 1;
+  grid-column: 2;
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: 1fr;
+  animation: moveLeft 1s ease-in;
+}
+
+#header-social-icons > a {
+  width: 100%;
+  place-self: center;
+}
+
+#header-social-icons > a > .nav-icon:hover {
+  color: grey;
+  opacity: 1;
+}
+
+#header-message {
+  background-color: rgba(210, 215, 211, 0.4);
+  padding: 0.8rem 0.8rem;
+  text-align: center;
+  color: rgba(242, 110, 62, 0.8);
+  text-shadow: 0 0 5px white;
+  font-size: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
+  animation: moveUp 1s ease-in;
+}
+
+/* TABLET */
+@media only screen and (min-width: 30rem) {
+  header {
+    background-position: center -7.2rem;
+  }
+
+  #top-header {
+    grid-template-columns: 1.3fr 6fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 0.5rem;
+    margin-top: 2rem;
+    place-items: center;
+  }
+
+  #navbar {
+    grid-row: 1;
+    grid-column: 2;
+    width: 20%;
+  }
+
+  #navbar > ul > li {
+    display: none;
+  }
+
+  #navbar > ul > li:nth-child(5) {
+    border-radius: 0rem;
+  }
+
+  #navbar > ul > li:last-child {
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+
+  #navbar > ul > li:last-child > a > span {
+    margin: 0;
+  }
+
+  #top-header.responsive {
+    align-items: start;
+  }
+
+  .topnav.responsive > ul > li {
+    display: flex !important;
+  }
+
+  header > #top-header > .topnav.responsive {
+    width: 80%;
+  }
+
+  #header-social-icons {
+    grid-row: 1;
+    grid-column: 3;
+    width: auto;
+  }
+
+  #header-social-icons > a {
+    justify-content: right;
+    padding: 0.6rem;
+  }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 49rem) {
+  header {
+    height: 25.5rem;
+    background-size: initial;
+    background-position: center -27.1rem;
+    background-repeat: no-repeat;
+    grid-template-rows: 1fr 2fr;
+    grid-gap: 9rem;
+  }
+
+  header #top-header {
+    grid-template-columns: auto 6fr auto;
+    grid-template-rows: auto;
+    grid-gap: 0.5rem;
+    align-items: center !important;
+  }
+
+  #navbar {
+    width: 100% !important;
+    background-color: initial;
+    color: #808080;
+  }
+
+  #navbar > ul {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    animation: moveDown 1s ease-in;
+  }
+
+  #navbar > ul > li {
+    display: flex;
+    width: initial;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.5rem !important;
+  }
+
+  #navbar > ul > li:last-child {
+    display: none !important;
+  }
+
+  #header-social-icons {
+    font-size: 1.1rem;
+    color: #808080;
+  }
+
+  #header-social-icons > a > .nav-icon:hover {
+    color: rgb(53, 53, 53);
+  }
+
+  #header-message {
+    margin: 0 3rem;
+    font-size: 2rem;
+    padding-top: 2rem;
+  }
+}

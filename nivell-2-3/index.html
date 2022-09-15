@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Japan Tourism (HTML & CSS)</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/styles-general.css" />
+  <link rel="stylesheet" href="css/styles-header.css" />
+  <link rel="stylesheet" href="css/styles-main.css" />
+  <link rel="stylesheet" href="css/styles-footer.css" />
+  <link rel="stylesheet" href="css/keyframes.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/512e39b846.js" crossorigin="anonymous"></script>
+  <script src="openMenu.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="top-header" id="top-header">
+      <div id="header-icon">
+        <img src="images/logo.png"
+          alt="japantourism.com" />
+      </div>
+      <div class="topnav" id="navbar">
+        <ul>
+          <li>
+            <a href="#"><span class="nav-icon fa-solid fa-house-chimney"></span>Inicio</a>
+          </li>
+          <li>
+            <a href="#"><span class="nav-icon fa-solid fa-map-location-dot"></span>Rutas</a>
+          </li>
+          <li>
+            <a href="#"><span class="nav-icon fa-solid fa-square-h"></span>Hoteles</a>
+          </li>
+          <li>
+            <a href="#"><span class="nav-icon fa-solid fa-plane"></span>Vuelos</a>
+          </li>
+          <li>
+            <a href="#"><span class="nav-icon fa-solid fa-envelope-open-text"></span>Contacto</a>
+          </li>
+          <li>
+            <a href="#"><span class="nav-icon fa-solid fa-bars fa-2xl" id="menu-icon" onclick="openMenu()"></span></a>
+          </li>
+        </ul>
+      </div>
+      <div id="header-social-icons">
+        <a href="#"><span class="nav-icon fa-brands fa-facebook-square"></span></a>
+        <a href="#"><span class="nav-icon fa-brands fa-twitter"></span></a>
+      </div>
+    </div>
+
+    <div id="header-message">
+      <div>”Disfruta de la experiencia de otros viajeros”</div>
+    </div>
+  </header>
+
+  <div id="main-section">
+    <section id="main-content">
+      <div id="content-columns">
+        <article class="small-article">
+          <img src="images/sakura.jpg" id="img-cultura" class="img-article"
+            alt="Sakura. La magia de los cerezos en flor."/>
+
+          <p class="article-date">3 de mayo de 2022</p>
+          <h2>CULTURA</h2>
+          <p class="article-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo viverra elit, eu tempus sapien imperdiet
+            a. Nulla id mi fermentum, dictum ante ac, viverra nulla. Morbi facilisis arcu pellentesque diam facilisis,
+            sed tristique nunc sodales. In hendrerit felis est, non pharetra leo accumsan id. Maecenas sit amet dapibus
+            turpis. Mauris quis condimentum ligula, eu sollicitudin ante. Suspendisse felis arcu, varius in dapibus sit
+            amet, condimentum a arcu.
+          </p>
+          <a href="#expand-article-page">Leer más...</a>
+        </article>
+
+        <article class="small-article">
+          <img src="images/comida.jpg" id="img-gastronomia" class="img-article"
+            alt="Comida típica japonesa."/>
+          <p class="article-date">1 de mayo de 2022</p>
+          <h2>GASTRONOMÍA</h2>
+          <p class="article-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iste mollitia placeat sint soluta nemo
+            saepe tempora eveniet itaque minima, dolorem earum laboriosam nihil perferendis rerum eos quos
+            necessitatibus ad velit. Quidem velit veritatis adipisci deserunt exercitationem impedit officiis. Quisquam
+            cupiditate quidem corrupti ea suscipit. Quos fuga nam, temporibus pariatur porro saepe dicta ab expedita
+            soluta placeat fugiat voluptates inventore doloremque, maxime quo qui nihil.
+          </p>
+          <a href="#expand-article-page">Leer más...</a>
+        </article>
+
+        <article class="small-article">
+          <img src="images/fuji.jpg" id="img-turismo" class="img-article"
+            alt="Paisaje con el monte Fuji y la ciudad de Gotenba."/>
+          <p class="article-date">22 de abril de 2022</p>
+          <h2>TURISMO</h2>
+          <p class="article-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui deleniti aperiam aspernatur est sint quod
+            necessitatibus, aliquid fugit mollitia eaque, repellendus, id delectus quae quidem? Voluptatem officia ea
+            dolores obcaecati! Beatae dolor aspernatur repellendus ut nam quidem officiis eveniet odit molestias cum,
+            temporibus, numquam sint maiores accusantium quis dolore qui quam molestiae. Culpa error aut magni quis,
+            odit nisi consectetur ipsa, nobis deleniti, saepe sed.
+          </p>
+          <a href="#expand-article-page">Leer más...</a>
+        </article>
+
+        <article class="small-article">
+          <img src="images/noche.jpg" id="img-vida-nocturna" class="img-article"
+            alt="Izakaya, la zona de bares tradicionales japoneses."/>
+          <p class="article-date">30 de marzo de 2022</p>
+          <h2>VIDA NOCTURNA</h2>
+          <p class="article-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui in esse fugit sunt. Porro nisi aut maiores eos
+            soluta, repellat, cupiditate quasi corrupti rem, neque magnam nihil. Mollitia quos temporibus dicta
+            veritatis dolores pariatur ad eum itaque harum accusantium, sunt at minus quaerat voluptatibus dolorem
+            explicabo doloribus, cum tempore ullam reprehenderit ipsum? Animi laboriosam deserunt excepturi cupiditate
+            itaque consectetur omnis, nihil ut dolores hic magnam?
+          </p>
+          <a href="#expand-article-page">Leer más...</a>
+        </article>
+      </div>
+
+      <div id="bottom-text-main">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident commodi nulla atque minima corporis quod
+          vitae, eaque qui excepturi veritatis, facilis eius possimus sit saepe autem nemo dolor suscipit illo ea
+          distinctio.
+        </p>
+      </div>
+    </section>
+
+    <aside id="aside">
+      <div class="aside-article">
+        <h3>Something</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo viverra elit, eu tempus sapien imperdiet
+          a. Nulla id mi fermentum, dictum ante ac, viverra nulla. Mauris quis condimentum ligula, eu sollicitudin ante.
+        </p>
+      </div>
+    </aside>
+  </div>
+
+  <footer id="footer">
+    <p>©2022 Japan Tourism</p>
+  </footer>
+</body>
+
+</html>

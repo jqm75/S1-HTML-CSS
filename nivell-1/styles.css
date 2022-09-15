@@ -1,0 +1,133 @@
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+
+  }
+body {
+    margin: auto;
+    max-width: 1200px;
+}
+main {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  /* CAJA 1 */  
+
+  .header {
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: DarkSlateBlue;
+  margin-bottom: 5px;
+  align-items: center;
+  }
+
+          .header_item1 {
+          background: LightPink;
+          flex: 1 1 auto;
+          }
+  
+          .header_item2 {
+          background: LightPink;
+          flex: 5 1 auto;
+          }
+
+  .texto_header {
+  display: flex;
+  flex-flow: column nowrap;
+  background: rgb(36, 36, 36);
+  }
+    
+          .texto {
+          background: chocolate;
+          margin-top: 5px;
+          }
+              
+          .texto_item {
+          background: sandybrown;
+          }
+  
+/* CAJA 2 */ 
+  .seccion {
+    background: rgb(36, 36, 36);
+    display: flex;
+  }
+  
+      .articulo {
+      display: flex;
+      background: DarkSlateBlue;
+      flex: 2 1 auto;
+      flex-flow: row wrap;
+      }
+  
+          .articulo_item1 {
+          display: flex;
+          background: LightBlue;
+          flex: 1 1 40%;
+          }
+  
+          .articulo_item2 {
+          display: flex;
+          background: powderblue;
+          flex: 1 1 100%;
+          }
+  
+      .aside {
+      background: Salmon;
+      flex: 1 1 auto;
+      flex-flow: column wrap;
+      }
+  
+          .publi {
+          background: peachpuff;
+          }
+
+ /* CAJA 3 */
+  .footer {
+    background: rgb(36, 36, 36);
+    display: flex;
+    justify-content: center;
+  }
+  
+      .texto_footer {
+      background: SandyBrown;
+      flex: 1 1 auto;
+      }
+   
+      
+
+/* X-Small devices (portrait phones, less than 576px) */
+  @media (max-width: 575.98px) {
+    .header {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .articulo {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .aside {
+      flex-direction: column;
+    }
+  }
+  
+/* Small devices (landscape phones, less than 768px) */
+  @media (max-width: 767.98px) {
+    .seccion {
+      flex-direction: column;
+      background: Khaki;
+    }
+  }
+  
+/* Medium devices (tablets, less than 992px) */
+  @media (max-width: 991.98px) { ... }
+  
+Large devices (desktops, less than 1200px)
+  @media (max-width: 1199.98px) { ... }
+  
+/* X-Large devices (large desktops, less than 1400px) */
+  @media (max-width: 1399.98px) { ... }
+
+  
